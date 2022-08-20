@@ -18,7 +18,31 @@ public class Matricula {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  @OneToOne(cascade = CascadeType.ALL)
+  public Long getId() {
+	return id;
+}
+
+public void setId(Long id) {
+	this.id = id;
+}
+
+public Aluno getAluno() {
+	return aluno;
+}
+
+public void setAluno(Aluno aluno) {
+	this.aluno = aluno;
+}
+
+public LocalDateTime getDataDaMatricula() {
+	return dataDaMatricula;
+}
+
+public void setDataDaMatricula(LocalDateTime dataDaMatricula) {
+	this.dataDaMatricula = dataDaMatricula;
+}
+
+@OneToOne(cascade = CascadeType.ALL)
   @JoinColumn(name = "aluno_id")
   private Aluno aluno;
 

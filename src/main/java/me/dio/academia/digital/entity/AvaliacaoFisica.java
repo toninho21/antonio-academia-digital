@@ -30,4 +30,19 @@ public class AvaliacaoFisica {
   @Column(name="altura_atual")
   private double altura;
 
+public void setAluno(Aluno aluno2) {
+	// TODO Auto-generated method stub
+	
+}
+
+public void setPeso(Object peso2) {
+	// TODO Auto-generated method stub
+	
+}
+
+public void setAltura(Object altura2) {
+	// TODO Auto-generated method stub
+	
+}
+
 }
